@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+{% block body %}
+<!-- Page Header-->
+<header class="masthead" style="background-image: url('{{url_for('static',filename='assets/img/home-bg.jpg')}}')">
+    <div class="container position-relative px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <div class="site-heading">
+                    <h1>WeCode -the world</h1>
+                    <span class="subheading">The blog loved by programmers</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Main Content-->
+<div class="container px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="col-md-10 col-lg-8 col-xl-7">
+            <!-- Post preview-->
+<!-- Todo- fetch through using the for loop from the database -->
+{% for post in posts %}
+
+            <div class="post-preview">
+                <a href="post.html">
+                    <h2 class="post-title "><a href="/posts/{{ post.slug }}">{{ post.title.capitalize()}}</a></h2>
+                    <h5 class="post-subtitle">{{ post.sub_heading.capitalize()}}</h5>
+                </a>
+                <p class="post-meta">
+                    {{post.content[0:45]}}...
+                </br>
+                    posted by 
+                    <a href='#'> Admin </a> on {{post.date}}
+                </p>
+            </div>
+            <!-- Divider-->
+            <hr class="my-4" />
+    {% endfor %}
+            <!-- Pager-->
+            <div class="clearfix">
+                <a class="btn btn-primary text-uppercase" href="{{prev}}"> &larr; Newer Posts →</a>
+                <a class="btn btn-primary text-uppercase" href="{{next}}">Older Posts → &rarr;</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

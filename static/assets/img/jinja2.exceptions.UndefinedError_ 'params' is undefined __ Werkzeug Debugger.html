@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)http://127.0.0.1:5000/dashboard -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>jinja2.exceptions.UndefinedError: 'params' is undefined
+ // Werkzeug Debugger</title>
+    <link rel="stylesheet" href="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/style.css">
+    <link rel="shortcut icon" href="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png">
+    <script src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/debugger.js.download"></script>
+    <script>
+      var CONSOLE_MODE = false,
+          EVALEX = true,
+          EVALEX_TRUSTED = false,
+          SECRET = "IFWmBVsItlG4jFHUgogO";
+    </script>
+  </head>
+  <body style="background-color: #fff" data-new-gr-c-s-check-loaded="14.1033.0" data-gr-ext-installed="">
+    <div class="debugger">
+<h1>UndefinedError</h1>
+<div class="detail">
+  <p class="errormsg">jinja2.exceptions.UndefinedError: 'params' is undefined
+</p>
+</div>
+<h2 class="traceback" style="cursor: pointer;">Traceback <em>(most recent call last)</em></h2>
+<div class="traceback">
+  <h3></h3>
+  <ul><li><div class="frame" id="frame-1993034894784">
+  <h4>File <cite class="filename">"C:\Users\sharm\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py"</cite>,
+      line <em class="line">2213</em>,
+      in <code class="function">__call__</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">    </span>def __call__(self, environ: dict, start_response: t.Callable) -&gt; t.Any:<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>"""The WSGI server calls the Flask application object as the<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>WSGI application. This calls :meth:`wsgi_app`, which can be<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>wrapped to apply middleware.<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>"""<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line current"><span class="ws">        </span>return self.wsgi_app(environ, start_response)
+<span class="ws">        </span>       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre></div>
+</div>
+
+</li><li><div class="frame" id="frame-1993034901984">
+  <h4>File <cite class="filename">"C:\Users\sharm\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py"</cite>,
+      line <em class="line">2193</em>,
+      in <code class="function">wsgi_app</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">            </span>try:<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">                </span>ctx.push()<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">                </span>response = self.full_dispatch_request()<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">            </span>except Exception as e:<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">                </span>error = e<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line current"><span class="ws">                </span>response = self.handle_exception(e)
+<span class="ws">                </span>           ^^^^^^^^^^^^^^^^^^^^^^^^<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">            </span>except:  # noqa: B001<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">                </span>error = sys.exc_info()[1]<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">                </span>raise<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">            </span>return response(environ, start_response)<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>finally:<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre></div>
+</div>
+
+</li><li><div class="frame" id="frame-1993034902128">
+  <h4>File <cite class="filename">"C:\Users\sharm\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py"</cite>,
+      line <em class="line">2190</em>,
+      in <code class="function">wsgi_app</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">        </span>ctx = self.request_context(environ)<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>error: BaseException | None = None<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>try:<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">            </span>try:<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">                </span>ctx.push()<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line current"><span class="ws">                </span>response = self.full_dispatch_request()
+<span class="ws">                </span>           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">            </span>except Exception as e:<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">                </span>error = e<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">                </span>response = self.handle_exception(e)<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">            </span>except:  # noqa: B001<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">                </span>error = sys.exc_info()[1]<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre></div>
+</div>
+
+</li><li><div class="frame" id="frame-1993034902272">
+  <h4>File <cite class="filename">"C:\Users\sharm\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py"</cite>,
+      line <em class="line">1486</em>,
+      in <code class="function">full_dispatch_request</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">            </span>request_started.send(self, _async_wrapper=self.ensure_sync)<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">            </span>rv = self.preprocess_request()<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">            </span>if rv is None:<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">                </span>rv = self.dispatch_request()<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>except Exception as e:<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line current"><span class="ws">            </span>rv = self.handle_user_exception(e)
+<span class="ws">            </span>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>return self.finalize_request(rv)<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws"></span> <img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">    </span>def finalize_request(<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>self,<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>rv: ft.ResponseReturnValue | HTTPException,<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre></div>
+</div>
+
+</li><li><div class="frame" id="frame-1993034902416">
+  <h4>File <cite class="filename">"C:\Users\sharm\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py"</cite>,
+      line <em class="line">1484</em>,
+      in <code class="function">full_dispatch_request</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws"></span> <img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>try:<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">            </span>request_started.send(self, _async_wrapper=self.ensure_sync)<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">            </span>rv = self.preprocess_request()<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">            </span>if rv is None:<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line current"><span class="ws">                </span>rv = self.dispatch_request()
+<span class="ws">                </span>     ^^^^^^^^^^^^^^^^^^^^^^^<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>except Exception as e:<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">            </span>rv = self.handle_user_exception(e)<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>return self.finalize_request(rv)<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws"></span> <img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">    </span>def finalize_request(<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre></div>
+</div>
+
+</li><li><div class="frame" id="frame-1993034902560">
+  <h4>File <cite class="filename">"C:\Users\sharm\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py"</cite>,
+      line <em class="line">1469</em>,
+      in <code class="function">dispatch_request</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">            </span>and req.method == "OPTIONS"<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>):<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">            </span>return self.make_default_options_response()<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span># otherwise dispatch to the handler for that endpoint<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>view_args: dict[str, t.Any] = req.view_args  # type: ignore[assignment]<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line current"><span class="ws">        </span>return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+<span class="ws">        </span>       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws"></span> <img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">    </span>def full_dispatch_request(self) -&gt; Response:<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>"""Dispatches the request and on top of that performs request<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>pre and postprocessing as well as HTTP exception catching and<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>error handling.<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre></div>
+</div>
+
+</li><li><div class="frame" id="frame-1993034902704">
+  <h4>File <cite class="filename">"c:\DATA\flask Tutorial\main.py"</cite>,
+      line <em class="line">146</em>,
+      in <code class="function">dashboard</code></h4>
+  <div class="source "><pre class="line before"><span class="ws">            </span>posts = sample_post.query.all()<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">            </span>return render_template("dashboard.html", params=params, posts=posts)<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>else:<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">            </span>return render_template("dashboard.html", params=params, posts=posts)<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">    </span>else:<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line current"><span class="ws">        </span>return render_template("dashboard.html")
+<span class="ws">        </span>       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws"></span> <img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws"></span>#Edit page<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws"></span>@app.route("/edit/&lt;string:sno&gt;" , methods=['GET', 'POST'])<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws"></span>def edit(sno):<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">    </span>#  checking the user is logged in or not<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre></div>
+</div>
+
+</li><li><div class="frame" id="frame-1993034904288">
+  <h4>File <cite class="filename">"C:\Users\sharm\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\templating.py"</cite>,
+      line <em class="line">151</em>,
+      in <code class="function">render_template</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">        </span>a list is given, the first name to exist will be rendered.<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">    </span>:param context: The variables to make available in the template.<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">    </span>"""<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">    </span>app = current_app._get_current_object()  # type: ignore[attr-defined]<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">    </span>template = app.jinja_env.get_or_select_template(template_name_or_list)<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line current"><span class="ws">    </span>return _render(app, template, context)
+<span class="ws">    </span>       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws"></span> <img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws"></span> <img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws"></span>def render_template_string(source: str, **context: t.Any) -&gt; str:<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">    </span>"""Render a template from the given source string with the given<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">    </span>context.<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre></div>
+</div>
+
+</li><li><div class="frame" id="frame-1993034905152">
+  <h4>File <cite class="filename">"C:\Users\sharm\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\templating.py"</cite>,
+      line <em class="line">132</em>,
+      in <code class="function">_render</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws"></span>def _render(app: Flask, template: Template, context: dict[str, t.Any]) -&gt; str:<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">    </span>app.update_template_context(context)<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">    </span>before_render_template.send(<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>app, _async_wrapper=app.ensure_sync, template=template, context=context<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">    </span>)<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line current"><span class="ws">    </span>rv = template.render(context)
+<span class="ws">    </span>     ^^^^^^^^^^^^^^^^^^^^^^^^<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">    </span>template_rendered.send(<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>app, _async_wrapper=app.ensure_sync, template=template, context=context<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">    </span>)<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">    </span>return rv<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws"></span> <img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre></div>
+</div>
+
+</li><li><div class="frame" id="frame-1993034905296">
+  <h4>File <cite class="filename">"C:\Users\sharm\AppData\Local\Programs\Python\Python311\Lib\site-packages\jinja2\environment.py"</cite>,
+      line <em class="line">1301</em>,
+      in <code class="function">render</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">        </span>ctx = self.new_context(dict(*args, **kwargs))<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws"></span> <img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>try:<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">            </span>return self.environment.concat(self.root_render_func(ctx))  # type: ignore<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>except Exception:<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line current"><span class="ws">            </span>self.environment.handle_exception()
+<span class="ws">            </span>^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws"></span> <img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">    </span>async def render_async(self, *args: t.Any, **kwargs: t.Any) -&gt; str:<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>"""This works similar to :meth:`render` but returns a coroutine<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>that when awaited returns the entire rendered template string.  This<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>requires the async feature to be enabled.<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre></div>
+</div>
+
+</li><li><div class="frame" id="frame-1993035500560">
+  <h4>File <cite class="filename">"C:\Users\sharm\AppData\Local\Programs\Python\Python311\Lib\site-packages\jinja2\environment.py"</cite>,
+      line <em class="line">936</em>,
+      in <code class="function">handle_exception</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">        </span>"""Exception handling helper.  This is used internally to either raise<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>rewritten exceptions or return a rendered traceback for the template.<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>"""<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>from .debug import rewrite_traceback_stack<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws"></span> <img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line current"><span class="ws">        </span>raise rewrite_traceback_stack(source=source)
+<span class="ws">        </span>^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws"></span> <img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">    </span>def join_path(self, template: str, parent: str) -&gt; str:<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>"""Join a template with the parent.  By default all the lookups are<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>relative to the loader root so this method returns the `template`<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>parameter unchanged, but if the paths should be relative to the<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre></div>
+</div>
+
+</li><li><div class="frame" id="frame-1993035500704">
+  <h4>File <cite class="filename">"c:\DATA\flask Tutorial\templates\dashboard.html"</cite>,
+      line <em class="line">1</em>,
+      in <code class="function">top-level template code</code></h4>
+  <div class="source "><pre class="line current"><span class="ws"></span>{% extends 'layout.html' %}<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws"></span>{% block body %}<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">  </span>&lt;!-- Page Header --&gt;<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">  </span>&lt;header class="masthead" style="background-image: url('{{ url_for('static', filename = 'assets/img/home-bg.jpg') }}')"&gt;<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">    </span>&lt;div class="container position-relative px-4 px-lg-5"&gt;<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">      </span>&lt;div class="row gx-4 gx-lg-5 justify-content-center"&gt;<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre></div>
+</div>
+
+</li><li><div class="frame" id="frame-1993035501280">
+  <h4>File <cite class="filename">"c:\DATA\flask Tutorial\templates\layout.html"</cite>,
+      line <em class="line">58</em>,
+      in <code class="function">top-level template code</code></h4>
+  <div class="source "><pre class="line before"><span class="ws">        </span>&lt;div class="container px-4 px-lg-5"&gt;<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">            </span>&lt;div class="row gx-4 gx-lg-5 justify-content-center"&gt;<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">                </span>&lt;div class="col-md-10 col-lg-8 col-xl-7"&gt;<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">                    </span>&lt;ul class="list-inline text-center"&gt;<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">                        </span>&lt;li class="list-inline-item"&gt;<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line current"><span class="ws">                            </span>&lt;a href="{{params['tw_url']}}" target="_blank"&gt;<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">                                </span>&lt;span class="fa-stack fa-lg"&gt;<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">                                    </span>&lt;i class="fas fa-circle fa-stack-2x"&gt;&lt;/i&gt;<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">                                    </span>&lt;i class="fab fa-twitter fa-stack-1x fa-inverse"&gt;&lt;/i&gt;<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">                                </span>&lt;/span&gt;<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">                            </span>&lt;/a&gt;<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre></div>
+</div>
+
+</li><li><div class="frame" id="frame-1993035502144">
+  <h4>File <cite class="filename">"C:\Users\sharm\AppData\Local\Programs\Python\Python311\Lib\site-packages\jinja2\environment.py"</cite>,
+      line <em class="line">466</em>,
+      in <code class="function">getitem</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">    </span>def getitem(<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>self, obj: t.Any, argument: t.Union[str, t.Any]<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">    </span>) -&gt; t.Union[t.Any, Undefined]:<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>"""Get an item or attribute of an object but prefer the item."""<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>try:<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line current"><span class="ws">            </span>return obj[argument]
+<span class="ws">            </span>       ^^^^^^^^^^^^^<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>except (AttributeError, TypeError, LookupError):<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">            </span>if isinstance(argument, str):<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">                </span>try:<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">                    </span>attr = str(argument)<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">                </span>except Exception:<img src="./jinja2.exceptions.UndefinedError_ &#39;params&#39; is undefined __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre></div>
+</div>
+</li></ul>
+  <blockquote>jinja2.exceptions.UndefinedError: 'params' is undefined
+</blockquote>
+</div>
+
+<div class="plain hidden">
+    <p>
+      This is the Copy/Paste friendly version of the traceback.
+    </p>
+    <pre>Traceback (most recent call last):
+  File "C:\Users\sharm\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2213, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sharm\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2193, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sharm\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sharm\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sharm\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sharm\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\DATA\flask Tutorial\main.py", line 146, in dashboard
+    return render_template("dashboard.html")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sharm\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\templating.py", line 151, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sharm\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\templating.py", line 132, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sharm\AppData\Local\Programs\Python\Python311\Lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "C:\Users\sharm\AppData\Local\Programs\Python\Python311\Lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "c:\DATA\flask Tutorial\templates\dashboard.html", line 1, in top-level template code
+    {% extends 'layout.html' %}
+  File "c:\DATA\flask Tutorial\templates\layout.html", line 58, in top-level template code
+    &lt;a href="{{params['tw_url']}}" target="_blank"&gt;
+  File "C:\Users\sharm\AppData\Local\Programs\Python\Python311\Lib\site-packages\jinja2\environment.py", line 466, in getitem
+    return obj[argument]
+           ^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'params' is undefined
+</pre>
+</div>
+<div class="explanation">
+  The debugger caught an exception in your WSGI application.  You can now
+  look at the traceback which led to the error.  <span class=""><p>To switch between the interactive traceback and the plaintext one, you can click on the "Traceback" headline. From the text traceback you can also create a paste of it. For code execution mouse-over the frame you want to debug and click on the console icon on the right side.</p><p>You can execute arbitrary Python code in the stack frames and there are some extra helpers available for introspection:</p><ul><li><code>dump()</code> shows all variables in the frame</li><li><code>dump(obj)</code> dumps all that's known about the object</li></ul></span>
+</div>
+      <div class="footer">
+        Brought to you by <strong class="arthur">DON'T PANIC</strong>, your
+        friendly Werkzeug powered traceback interpreter.
+      </div>
+    </div>
+
+    <div class="pin-prompt">
+      <div class="inner">
+        <h3>Console Locked</h3>
+        <p>
+          The console is locked and needs to be unlocked by entering the PIN.
+          You can find the PIN printed out on the standard output of your
+          shell that runs the server.
+        </p><form>
+          <p>PIN:
+            <input type="text" name="pin" size="14">
+            <input type="submit" name="btn" value="Confirm Pin">
+        </p></form>
+      </div>
+    </div>
+  
+
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+  div.grammarly-desktop-integration {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select:none;
+    user-select:none;
+  }
+
+  div.grammarly-desktop-integration:before {
+    content: attr(data-content);
+  }
+</style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>

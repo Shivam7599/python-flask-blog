@@ -1,0 +1,65 @@
+{% extends 'layout.html' %}
+{% block body %}
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('{{ url_for('static', filename = 'assets/img/home-bg.jpg') }}')">
+    <div class="container position-relative px-4 px-lg-5">
+      <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="col-md-10 col-lg-8 col-xl-7">
+          <div class="site-heading">
+            <h1>Admin-Panel</h1>
+            <span class="subheading">The blog loved by programmers</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Main Content -->
+  <div class="container px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-7">
+        <h1>Basic Actions</h1>
+        <div class="row" style="display: flex; flex-wrap: nowrap;">
+          <a href="/dashboard"><button class="btn btn-primary px-lg-5">Dashboard Home</button></a>
+          <a href="/logout"><button class="btn btn-primary px-lg-5">Log Out</button></a>
+        </div>
+        <hr />
+        <h1>Add/Edits Posts</h1>
+
+        <form action="/edit/{{ post.sno }}" name=" sentmessage" method="post">
+          <div class="form-group">
+            <label for="formGroupExampleInput">Title</label>
+            <input type="text" class="form-control" id="title" name="title" placeholder="" value="{{ post.title }}" />
+          </div>
+
+          <div class="form-group">
+            <label for="formGroupExampleInput2">Sub_heading</label>
+            <input type="text" class="form-control" id="sub" name="sub" placeholder="" value="{{ post.sub_heading }}" />
+          </div>
+
+          <div class="form-group">
+            <label for="formGroupExampleInput2">Slug</label>
+            <input type="text" class="form-control" id="slug" name="slug" placeholder="" value="{{ post.slug }}" />
+          </div>
+
+          <div class="form-group">
+            <label for="formGroupExampleInput2">Img_File</label>
+            <input type="text" class="form-control" id="image" name="image" placeholder="" value="{{ post.img_file }}" />
+          </div>
+
+          <div class="form-floating">
+            <textarea class="form-control" id="cont" name="cont" placeholder="Enter your message here..." style="height: 12rem" data-sb-validations="required">{{ post.content }}</textarea>
+            <label for="message">Content</label>
+            <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+          </div>
+          <div id="success"></div>
+          <button type="submit" class="btn btn-primary my-1" id="sendmessagebutton">Submit</button>
+        </form>
+
+        <!-- Pager -->
+        <div class="d-flex justify-content-end mb-4">
+          <a class="btn btn-primary text-uppercase" href="/">Older Posts →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
